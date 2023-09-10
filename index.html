@@ -28,6 +28,69 @@
 
     </div>
 </body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getFirestore, setDoc, doc, onSnapshot }from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js'
+
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDTt9vEN1IU8K-9_Ucjb56dvNE_-fFJGqM",
+      authDomain: "projector-967c7.firebaseapp.com",
+      projectId: "projector-967c7",
+      storageBucket: "projector-967c7.appspot.com",
+      messagingSenderId: "192883890354",
+      appId: "1:192883890354:web:042215fe94488a36a991ab"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    function isNight(){
+        document.getElementById("nightbg").style.display =  "block";
+
+        document.getElementById("night").style.display =  "block";
+    }
+
+    function isMorning(){
+        document.getElementById("nightbg").style.display =  "none";
+
+        document.getElementById("night").style.display =  "none";
+    }
+
+    const queryString = window.location.search;
+
+    if(queryString == "?night"){
+        await setDoc(doc(db, "heh", "first"), {
+            "time": 1
+        });
+    }
+    if(queryString == "?morning"){
+        await setDoc(doc(db, "heh", "first"), {
+            "time": 0
+        });
+    }
+
+    onSnapshot(doc(db, "heh", "first"), (doc) => {
+        let time = doc.data().time;
+
+        if (time == 0){
+            isMorning();
+        }
+        if(time == 1){
+            isNight();
+        }
+        console.log("time: " + time);
+    });
+
+
+</script>
 <script src="script.js"></script>
 
 </html>

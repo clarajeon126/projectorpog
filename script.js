@@ -36,9 +36,3 @@ function fixHour(i){
 }
 
 startTime();
-
-function isNight(){
-    document.getElementById("nightbg").style.display =  "block";
-
-    document.getElementById("night").style.display =  "block";
-}
