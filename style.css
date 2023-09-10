@@ -5,8 +5,11 @@
 }
 #naturevideo {
     position: absolute;
-    width: 100vw;
+    width: 130vw;
+    height: 130vh;
     opacity: 1;
+    left:-15vw;
+    top:-15vh;
 }
 
 #nightbg {
