@@ -1,0 +1,50 @@
+*{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#naturevideo {
+    position: absolute;
+    width: 100vw;
+    opacity: 1;
+}
+
+#nightbg {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./night.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#time {
+    position: absolute;
+    line-height: 100vh;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 40vh;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+}
+
+#second {
+    position: absolute;
+    font-size: 5vh;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    top: 65vh;
+    left: 80vw;
+}
+
+#night {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+}
