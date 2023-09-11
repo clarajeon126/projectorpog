@@ -15,7 +15,8 @@
 #nightbg {
     display: none;
     position: absolute;
-    width: 100vw;
+    left:-15vw;
+    width: 130vw;
     height: 100vh;
     background-image: url("./night.png");
     background-repeat: no-repeat;
