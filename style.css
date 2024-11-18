@@ -8,7 +8,7 @@
     width: 130vw;
     height: 130vh;
     opacity: 1;
-    left:-20vw;
+    left: -5vw;
     top:-30vh;
     filter: saturate(5);
     filter: brightness(2);
@@ -29,11 +29,11 @@
     position: absolute;
     line-height: 50vh;
     text-align: center;
-    width: 40vw;
-    left: 40vw;
+    width: 50vw;
+    left: 50vw;
     height: 50vh;
     top: 25vh;
-    font-size: 20vh;
+    font-size: 18vh;
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-style: italic;
