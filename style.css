@@ -10,6 +10,8 @@
     opacity: 1;
     left:-20vw;
     top:-30vh;
+    filter: saturate(5);
+    filter: brightness(2);
 }
 
 #nightbg {
@@ -27,11 +29,11 @@
     position: absolute;
     line-height: 50vh;
     text-align: center;
-    width: 80vw;
-    left: 10vw;
+    width: 40vw;
+    left: 40vw;
     height: 50vh;
     top: 25vh;
-    font-size: 40vh;
+    font-size: 20vh;
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-style: italic;
@@ -52,5 +54,5 @@
     width: 100vw;
     height: 130vh;
     background-color: black;
-    opacity: 0.98;
+    opacity: 0.5;
 }
